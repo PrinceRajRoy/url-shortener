@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Steps -
-1) Add MongoDB password and dbname to .env file
+1) Add MongoDB username, password and dbname to .env file
 2) Run npm run dev in the root project directory
 
 ## Available Scripts
