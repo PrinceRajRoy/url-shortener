@@ -19,9 +19,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.10.0",
     "shortid": "^2.2.15",
-    "nodemon": "^2.0.4"
-  },
-  "devDependencies": {
+    "nodemon": "^2.0.4",
     "dotenv": "^8.2.0"
   }
 }
