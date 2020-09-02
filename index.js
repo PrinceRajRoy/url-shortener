@@ -12,7 +12,7 @@ mongoose.connect(`mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.M
     useNewUrlParser: true, useUnifiedTopology: true
 })
 
-app.use(express.json())
+// app.use(express.json())
 
 app.get('/api/urls', async (req, res) => {
     const shortUrls = await ShortUrl.find();
