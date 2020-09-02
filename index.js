@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const ShortUrl = require('./models/shortUrl');
 const app = express();
+const path = require('path');
 require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
@@ -36,5 +37,12 @@ app.get('/api/:shortUrl', async (req, res) => {
 
     res.send(shortUrl.fullUrl);
 })
+
+if(process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname + 'client/build')));
+    app.get("*", (req, res) => {
+        res.sendFile(path.join(__dirname + '/client/build/index.html'));
+    })
+}
 
 app.listen(PORT);
