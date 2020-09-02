@@ -21,5 +21,6 @@
     "shortid": "^2.2.15",
     "nodemon": "^2.0.4",
     "dotenv": "^8.2.0"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }
