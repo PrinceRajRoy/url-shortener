@@ -7,7 +7,7 @@ require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
 
-console.log(process.env.MONGO_DB_USERNAME, process.env.MONGO_DB_PASSWORD, process.env.MONGO_DB_NAME);
+console.log(`mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@cluster0.y5ewu.mongodb.net/${process.env.MONGO_DB_NAME}?retryWrites=true&w=majority`);
 
 mongoose.connect(`mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@cluster0.y5ewu.mongodb.net/${process.env.MONGO_DB_NAME}?retryWrites=true&w=majority`, {
     useNewUrlParser: true, useUnifiedTopology: true
