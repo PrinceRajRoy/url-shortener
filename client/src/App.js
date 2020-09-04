@@ -25,11 +25,10 @@ function App() {
 
   const handleRedirect = (e, url) => {
     e.preventDefault();
-    axios.get(`/api/${url}`);
-    // Uncomment For Development
-      /*.then((res) => {
+    axios.get(`/api/${url}`)
+      .then((res) => {
         window.location = res.data;
-      });*/
+      });
   }
 
   return (

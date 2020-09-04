@@ -34,10 +34,7 @@ app.get('/api/:shortUrl', async (req, res) => {
     shortUrl.clicks++;
     shortUrl.save();
 
-    res.redirect(shortUrl.fullUrl);
-    
-    // Use Below For Development
-    // res.send(shortUrl.fullUrl);
+    res.send(shortUrl.fullUrl);
 })
 
 if(process.env.NODE_ENV === "production") {
