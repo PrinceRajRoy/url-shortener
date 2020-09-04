@@ -2,7 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Steps -
 1) Add MongoDB username, password and dbname to .env file
-2) Run npm run dev in the root project directory
+2) Add proxy to package.json inside client for sever as, "proxy": "http://localhost:5000"
+3) Run npm run dev in the root project directory
 
 ## Available Scripts
 
